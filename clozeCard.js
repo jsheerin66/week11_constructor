@@ -1,4 +1,11 @@
-function clozeCard(text, cloze){
+// want to add all consolelogs to code to understand why it works
+
+
+// psudeocode all the lines below
+
+
+
+function clozeCard(text, cloze) {
   this.text = text;
   this.cloze = cloze;
 }
@@ -13,3 +20,40 @@ var cloze = new clozeCard("I like to go to the store", "store")
 console.log(cloze);
 console.log(cloze.text);
 console.log(cloze.cloze);
+
+
+//the above is another way to do lines 1 through 8 of solution?? or from 1 to 11???
+
+var clozePositions = clozeDelete(text, cloze);
+
+
+this.partial = getPartial(text, clozePositions);
+
+//why is it postions in solution???
+this.cloze = text.slice(clozePositions[0], clozePositions[1])
+
+
+function getPartial(text, clozePostions) {
+
+  var begin = text.slice(0, clozePositions[0]);
+
+  var finish = text.slice(clozePositions[1], text.length);
+
+  return begin + "..." + finish;
+}
+
+function clozeDelete(text, cloze) {
+  var begin = text.indexOf(cloze);
+
+  if (start !== -1) {
+    return [begin, begin + cloze.length];
+  }
+  throw new Error("ERROR");
+}
+
+ClozeCard.prototype.displayCard = function displayCard() {
+  return
+  this.partial.replace(/\.\.\./, "'" + this.cloze + "'");
+};
+
+module.exports = ClozeCard
