@@ -1,0 +1,22 @@
+/*//If a cloze is used twice in partial will it accept or will there be an error message- line eighteen*/
+
+[
+  {
+    "partial": "Rome was not built in a day", "cloze": "was not"
+  },
+  {
+    "partial": "Patience is a virtue", "cloze": "is"
+  },
+  {
+    "partial": "Good things come to those who wait", "cloze": "come"
+  },
+  {
+    "partial": "What goes around comes back around", "cloze": "around"
+  },
+  {
+    "partial": "An eye for an eye leaves the whole ... blind", "cloze": "world"
+  },
+  {
+    "partial": "To every .... there is an equal and opposite reaction", "cloze": "action"
+  },
+]

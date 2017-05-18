@@ -9,9 +9,7 @@ function clozeCard(text, cloze) {
 
   this.partial = getPartial(text, clozePositions);
 
-  //why is it postions in solution???
   this.cloze = text.slice(clozePositions[0], clozePositions[1])
-
 
   function getPartial(text, clozePostions) {
 
